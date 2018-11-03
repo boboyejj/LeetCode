@@ -4,6 +4,7 @@ public int[] twoSum(int[] num, int target) {
     int left = 0, right = num.length - 1;
     while (left < right) {
         int v = num[left] + num[right];
+        if (v == target) {
             indice[0] = left + 1;
             indice[1] = right + 1;
             break;
