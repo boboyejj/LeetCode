@@ -1,0 +1,49 @@
+Time: O(n)
+Space: O(1)
+Notes: the original maxSubArray only works for array that has at least one positve number. Therefore, when it comes to all negatives
+  Use another function to return the maximum value.
+
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        curr = 0
+        maxi = 0
+        if len(nums) == 1:
+            return nums[0]
+        
+        if self.checkNegative(nums):
+            return max(nums)
+        
+        for i in range(len(nums)):
+            curr += nums[i]
+            if curr > maxi:
+                maxi = curr
+            if curr < 0:
+                curr = 0
+      
+        return maxi
+    
+    def checkNegative(self, nums:List[int]) -> bool:
+        for e in nums:
+            if e > 0:
+                return False
+        
+        return True
+
+Solution from discussion
+https://leetcode.com/problems/maximum-subarray/discuss/343722/very-simple-python3-solution-beats-98
+credits for okhabin
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        maxSeen = nums[0]
+        runningSum = nums[0]
+        
+        for i in range(len(nums) - 1):
+            if runningSum + nums[i+1] > nums[i+1]:
+                runningSum += nums[i+1]
+            else:
+                runningSum = nums[i+1]
+            
+            if runningSum > maxSeen:
+                maxSeen = runningSum
+        
+        return maxSeen
