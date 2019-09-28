@@ -8,47 +8,47 @@ Go the the target folder in which you want to clone the repository, and then:
 `git clone http://cmsc435.garrettvanhoy.com/nubbify/machine-learning-assistant.git`
 
 
-## Mac 
+## Mac Instruction
 
-### Environment Setup 
+#### Environment Setup 
 
 `python3 -m venv venv`
 
 `. venv/bin/activate`
 
-### Install flask
+#### Install flask
 > Note: If on the master branch execute this before the following commands: 
 
 > `pip install -e ../..`)
 
 `pip install -e .`
 
-### Specify application and environment
+#### Specify application and environment
 
 `export FLASK_APP=flaskr`
 
 `export FLASK_ENV=development`
 
-### Initialize database
+#### Initialize database
 
 `flask init-db`
 
-### Run Application
+#### Run Application
 
 `flask run`
 
 Then the application is running on  http://127.0.0.1:5000/
 
 
-## Windows 
+## Windows Instruction
 
-### Environment Setup 
+#### Environment Setup 
 
 `py -3 -m venv venv`
 
 `venv\Scripts\activate.bat`
 
-### Install Flask
+#### Install Flask
 
 >Note: If on the master branch execute this before the following commands: 
 
@@ -56,23 +56,26 @@ Then the application is running on  http://127.0.0.1:5000/
 
 `pip install -e .`
 
-### Specify application and environment
+#### Specify application and environment
 
 `set FLASK_APP=flaskr`
 
 `set FLASK_ENV=development`
 
-### Initialize database
+#### Initialize database
 
 `flask init-db`
 
-### Run Application
+#### Run Application
 
 `flask run`
 
 Then the application is running on  http://127.0.0.1:5000/
 
-## Testing
+===
+
+## Testing the Application
+
 `pip install '.[test]'`
 
 `pytest`
