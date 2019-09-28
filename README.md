@@ -1,14 +1,15 @@
 # Machine Learning Assistant
 
-This labeling tool is a platform for researchers to upload their own unlabeled data to be labelled by other users of the platform know as labelers. This platform will allow researchers to specify details about the labels they need to ensure the usefulness and uniformity of the resulting data set.
+Machine Learning Assistant is a labeling tool for researchers to upload their own unlabeled data to be labelled by other users of the platform know as labelers. This platform will allow researchers to specify details about the labels they need to ensure the usefulness and uniformity of the resulting data set.
 
-## Clone
+The following are the instructions of how to install and run the application for Mac and Windows users.
+
+## For Mac User
+
+#### Clone Repository
 Go the the target folder in which you want to clone the repository, and then:
 
 `git clone http://cmsc435.garrettvanhoy.com/nubbify/machine-learning-assistant.git`
-
-
-## Mac Instruction
 
 #### Environment Setup 
 
@@ -40,7 +41,12 @@ Go the the target folder in which you want to clone the repository, and then:
 Then the application is running on  http://127.0.0.1:5000/
 
 
-## Windows Instruction
+## For Windows User
+
+#### Clone Repository
+Go the the target folder in which you want to clone the repository, and then:
+
+`git clone http://cmsc435.garrettvanhoy.com/nubbify/machine-learning-assistant.git`
 
 #### Environment Setup 
 
@@ -72,7 +78,6 @@ Then the application is running on  http://127.0.0.1:5000/
 
 Then the application is running on  http://127.0.0.1:5000/
 
-===
 
 ## Testing the Application
 
