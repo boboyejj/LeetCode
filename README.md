@@ -17,7 +17,9 @@ Go the the target folder in which you want to clone the repository, and then:
 `. venv/bin/activate`
 
 ### Install flask
-(If on the master branch execture this command first `pip install -e ../..`)
+> Note: If on the master branch execute this before the following commands: 
+
+> `pip install -e ../..`)
 
 `pip install -e .`
 
@@ -48,7 +50,9 @@ Then the application is running on  http://127.0.0.1:5000/
 
 ### Install Flask
 
-(If on the master branch execute this before the following commands: `pip install -e ../..`)
+>Note: If on the master branch execute this before the following commands: 
+
+>`pip install -e ../..`
 
 `pip install -e .`
 
@@ -70,6 +74,7 @@ Then the application is running on  http://127.0.0.1:5000/
 
 ## Testing
 `pip install '.[test]'`
+
 `pytest`
 
  
