@@ -1,77 +1,28 @@
-NOTE: Instructions for running and testing your application should replace what's below.
-======
+# Machine Learning Assistant
 
-Flaskr
-======
+This labeling tool is a platform for researchers to upload their own unlabeled data to be labelled by other users of the platform know as labelers. This platform will allow researchers to specify details about the labels they need to ensure the usefulness and uniformity of the resulting data set.
 
-The basic blog app built in the Flask `tutorial`_.
+## Clone
+Go the the target folder in which you want to clone the repository
 
-.. _tutorial: http://flask.pocoo.org/docs/tutorial/
+`git clone http://cmsc435.garrettvanhoy.com/nubbify/machine-learning-assistant.git`
 
+## Environment Setup 
 
-Install
--------
+### Mac terminal
 
-**Be sure to use the same version of the code as the version of the docs
-you're reading.** You probably want the latest tagged version, but the
-default Git version is the master branch. ::
+`python3 -m venv venv`
 
-Clone the repository::
+`. venv/bin/activate`
 
-    $ git clone https://cmsc435.garrettvanhoy.com/gvanhoy/team_assignment_2
-    $ cd flask
+`pip install -e .`
 
-Create a virtualenv and activate it::
+### Windows cmd
 
-    $ python3 -m venv venv
-    $ . venv/bin/activate
+`py -3 -m venv venv`
 
-Or on Windows cmd::
+`venv\Scripts\activate.bat`
 
-    $ py -3 -m venv venv
-    $ venv\Scripts\activate.bat
+`pip install -e .`
 
-Install Flaskr::
-
-    $ pip install -e .
-
-Or if you are using the master branch, install Flask from source before
-installing Flaskr::
-
-    $ pip install -e ../..
-    $ pip install -e .
-
-
-Run
----
-
-::
-
-    $ export FLASK_APP=flaskr
-    $ export FLASK_ENV=development
-    $ flask init-db
-    $ flask run
-
-Or on Windows cmd::
-
-    > set FLASK_APP=flaskr
-    > set FLASK_ENV=development
-    > flask init-db
-    > flask run
-
-Open http://127.0.0.1:5000 in a browser.
-
-
-Test
-----
-
-::
-
-    $ pip install '.[test]'
-    $ pytest
-
-Run with coverage report::
-
-    $ coverage run -m pytest
-    $ coverage report
-    $ coverage html  # open htmlcov/index.html in a browser
+ 
